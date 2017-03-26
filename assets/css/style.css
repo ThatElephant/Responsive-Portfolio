@@ -7,6 +7,13 @@ body {
     background-size: cover;
 }
 
+.wrap {
+    position: absolute;
+    width: 960px;
+    height: 100%;
+    margin: 145px 296px 30px 296px;
+}
+
 /* HEADER */
 
 #Header1 {
@@ -69,8 +76,7 @@ body {
 /* CONNECT WITH ME */
 
 #connect {
-	background-color: #fff;
-    margin: 145px 10%;
+    background-color: #fff;
     width: 240px;
     height: 175px;
     float: right;
@@ -112,12 +118,9 @@ body {
 /* ABOUT ME */
 
 #aboutme1 {
-	position: absolute;
     width: 650px;
-    height: 67%;
-    margin: 145px 10%;
+    height: 100%;
     float: left;
-    margin-bottom: 105px;
     background-color: #fff;
     border: 2px solid #777;
     border-radius: 12px;
@@ -134,12 +137,11 @@ body {
 }
 
 #aboutmeimg {
-	margin: 15px 20px 15px 16px;
+    margin: 15px 20px 25px 16px;
     background-color: #fff;
-    height: 75%;
+    height: 81%;
     overflow: auto;
 }
-
 
 #aboutmeimg2 {
 	position: relative;
@@ -154,7 +156,6 @@ body {
 
 #aboutmecontent {
 	color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     letter-spacing: 1px;
     word-spacing: 1px;
 }
@@ -163,12 +164,8 @@ body {
 /* PORTFOLIO */
 
 #portfolio1 {
-	position: absolute;
-    left: 275px;
-    top: 141px;
     width: 650px;
     height: 100%;
-    margin-bottom: 110px;
     background-color: #fff;
     border: 2px solid #777;
     border-radius: 12px;
@@ -211,12 +208,10 @@ span h4{
     background-color: #717476;
     width: 45%;
     height: 6%;
-    z-index: 1;
     margin-top: -85px;
     margin-left: 10px;
     opacity: .8;
     font-size: 22px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-decoration: none;
     color: white;
     border: 2px solid black;
@@ -239,9 +234,6 @@ span h4{
 /* FORM */
 
 #formwrap {
-    position: absolute;
-    left: 275px;
-    top: 141px;
     width: 650px;
     height: 520px;
     background-color: #fff;
@@ -270,7 +262,6 @@ label {
 	display: block;
 	margin-left: 20px;
 	padding: 16px;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 input {
@@ -322,7 +313,7 @@ fieldset {
 	width: 100%;
 	height: 75px;
 	text-align: center;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	border-top: 4px solid #4aaaa5;
 }
@@ -331,4 +322,141 @@ fieldset {
 	padding-top: 30px;
     font-size: 12px;
     color: #c0c0c0;
+}
+
+/* END OF FOOTER */
+/* MEDIA WIDTH */
+
+
+
+@media screen and (max-width: 980px) {
+    #Header1 {
+        position: static;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    #connect {
+        height: 235px;
+        width: 81px;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    #connecttext {
+        display: none;
+    }
+
+    #connecticons {
+        margin-top: -5px;
+        float: right;
+    }
+
+    #aboutme1 {
+        margin: 0px;
+        height: 780px;
+        width: 664px;
+        border-radius: 0px;
+        border: 3px solid #777;
+    }
+
+    #aboutmeimg {
+        height: 650px;
+    }
+
+    #portfolio1 {
+        margin: 10px 0px 10px 10px;
+        height: 780px;
+    }
+
+    #portimage1 {
+        height: 650px;
+    }
+
+    #formwrap {
+        margin: 10px 0px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbar {
+        clear: both;
+        width: 242px;
+        height: 44px;
+        background-color: #fff;
+        border: 3px solid #777;
+        float: none;
+        z-index: 1;
+    }
+
+    .wrap {
+        margin-top: 48px;
+    }
+    
+    #connect {
+        height: 44px;
+        width: 140px;
+        margin: 0px;
+        margin-top: -49px;
+        border-radius: 0px;
+        border: 3px solid #777;
+    }
+
+    #connecticons {
+        margin: 0px;
+        float: left;
+        height: 44px;
+        width: 140px;
+    }
+
+    #connectimage {
+        width: 42px;
+        height: 42px;
+        margin: 1px 2px 1px 2px;
+    }
+
+    #connectli a {
+        margin: 0px;
+        float: left;
+    }
+
+    #aboutme1 {
+        margin: 0px;
+        height: 114%;
+        width: 100%;
+        border-radius: 0px;
+        border: 3px solid #777;
+    }
+
+    #aboutmeimg {
+        height: 86%;
+    }
+
+    #portfolio1 {
+        margin: 0px;
+        border-radius: 0px;
+        border: 3px solid #777;
+    }
+
+    #formwrap {
+        margin: 0px;
+        border-radius: 0px;
+        border: 3px solid #777;
+    }
+
+    #footer {
+        bottom: -350px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+
 }
